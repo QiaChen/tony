@@ -3,6 +3,7 @@
     if(!get_option('king_fre_cate')) $f = '99999'; else $f = get_option('king_fre_cate');
     if(!get_option('king_wor_cate')) $w = '66666'; else $w = get_option('king_wor_cate');
     if(!get_option('markdown-it')) $m = 0; elseif(get_option('markdown-it') == '关闭') $m = 0; else $m = 1;
+    $m=0;
     if(!get_option('king_read')){
         $color = 0; 
     }elseif(get_option('king_read') == '关闭'){
