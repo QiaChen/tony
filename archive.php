@@ -11,8 +11,8 @@ if(!get_option('king_per_page')) $p = '6'; else $p = get_option('king_per_page')
 <div id="header_info">
     <nav class="header-nav reveal">
         
-        <a class="top1 header-logo" style="text-decoration:none;" href="<?php echo site_url() ?>">XXXXX</a>
-        <p class="top2 lead archive-p">XXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <a class="top1 header-logo" style="text-decoration:none;" href="<?php echo site_url() ?>"></a>
+        <p class="top2 lead archive-p"></p>
         
         <div class="btn-group" style="float: right;margin-top: -65px;">
             <button type="button" class="btn btn-primary"><a href="<?php echo site_url() ?>" style="text-decoration:none;color:white"><i class="czs-hand-slide" style="margin-right:5px" ></i>回到首页</a></button>
