@@ -14,7 +14,7 @@ if(!get_option('king_per_page')) $p = '6'; else $p = get_option('king_per_page')
         <a class="top1 header-logo" style="text-decoration:none;" href="<?php echo site_url() ?>"></a>
         <p class="top2 lead archive-p"></p>
         
-        <div class="btn-group" style="float: right;margin-top: -65px;">
+        <div class="btn-group" style="float: right;margin-top: -80px;">
             <button type="button" class="btn btn-primary"><a href="<?php echo site_url() ?>" style="text-decoration:none;color:white"><i class="czs-hand-slide" style="margin-right:5px" ></i>回到首页</a></button>
         </div>
     </nav>
