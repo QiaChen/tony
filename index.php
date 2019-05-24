@@ -49,7 +49,7 @@ else $m = 1;
                                                                 } ?>" class="article-list-type1">{{ post.post_categories[0].name + ' | ' + (post.post_metas.tag_name ? post.post_metas.tag_name.toUpperCase() : '<?php if (get_option('king_cate_cate_ph')) echo get_option('king_cate_cate_ph');
                                                                                                                                                                                                                     else echo 'XX' ?>')  }}</em>
                 <div v-else class="article-list-tags">
-                    <a>文章标签</a>
+                    <!--<a>文章标签</a>-->
                     <template v-if="!!post.post_tags.length">
                         <a v-for="tag in post.post_tags.slice(0,2)" :href="tag.url" v-html="tag.name"></a>
                     </template>
