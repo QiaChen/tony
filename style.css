@@ -1616,7 +1616,6 @@ article-content img {
     margin: 0px;
     margin-top: -5px;
     overflow: hidden;
-    overflow-x: auto;
     width: 97%;
     white-space: nowrap;
     padding-bottom: 10px;
