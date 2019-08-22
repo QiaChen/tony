@@ -1,23 +1,38 @@
-# Tony
-An Elegant WordPress Theme Based on Vue.js
+<div align="center">
+  <h1>Tony</h1>
+  <p>An Elegant WordPress Theme Based on Vue.js</p>
+  <a href="https://github.com/HelipengTony/tony">
+    <img src="https://img.shields.io/github/forks/HelipengTony/tony.svg" alt="forks">
+  </a>
+
+  <a href="https://github.com/HelipengTony/tony">
+    <img src="https://img.shields.io/github/stars/HelipengTony/tony.svg" alt="stars">
+  </a>
+
+  <a href="https://github.com/HelipengTony/tony">
+    <img src="https://img.shields.io/github/license/HelipengTony/tony.svg" alt="license">
+  </a>
+</div>
+
 <br/>
 
-
+<div align="center">
+  
 [中文简介](https://github.com/HelipengTony/tony/blob/master/README_EN.md) | [ENGLISH](https://github.com/HelipengTony/tony/blob/master/README.md)
 
+</div>
 
 <br/>
 
 ### ScreenShot
 <br/>
 
-![Thumbnail_index](https://i.loli.net/2019/02/18/5c6a81958b193.png)
+![Thumbnail_index](https://i.loli.net/2019/08/18/BxlWFAusCM2PgU7.png)
 
 <br/>
 
 ### Requirements
 - WordPress 4.4+
-- Vue.js 2.x
 - WP REST API
 - Custom Permalink Structure (e.g. /%post_id%)
 
