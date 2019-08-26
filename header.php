@@ -38,7 +38,7 @@
     <?php if (!wp_is_mobile()) { ?>
         <header class="tony-header-fixed" id="header-div">
             <?php if (is_single()) { ?>
-                <div class="header-div1">
+                <div class="header-div1-1">
                     <a href="<?php echo site_url() ?>" style="display: inline-block;"><img src="<?php echo get_option('king_logo') ?>"></a>
                     <a href="<?php echo site_url() ?>/feed" style="display: inline-block;margin-top: 12px;margin-left: 15px;"><button type="button" class="btn btn-light" style="letter-spacing: 1px;font-weight: 500;">RSS订阅</button></a>
                     <a style="margin-top: 12px;margin-left: 12px;"><button onclick="open_search();" type="button" class="btn btn-light" style="letter-spacing: 1px;font-weight: 500;">全局搜索</button></a>
