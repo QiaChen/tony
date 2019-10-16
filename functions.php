@@ -75,7 +75,7 @@ function lb_time_since( $older_date, $comment_date = false ) {
 
 //后台提示信息
 function remove_footer_admin () {
-    echo 'Theme <b style="letter-spacing:1px;">Tony</b> | Designed with <img draggable="false" class="emoji" alt="love" src="https://s.w.org/images/core/emoji/11/svg/2764.svg"> by <a href="https://www.ouorz.com" target="_blank">TonyHe</a> | 当前 <a href="https://github.com/HelipengTony/tony/releases" target="_blank">'.wp_get_theme()->get( 'Version' ).'</a> 版本</p>';
+    echo 'Theme ';
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
 
