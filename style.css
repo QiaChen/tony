@@ -1794,6 +1794,9 @@ table {
 }
 
 @media screen and (max-width:767px) {
+    .comment-form input[type=text] {
+        width: 100%;
+    }
     .index-post-list {
         border-radius: 0px;
         box-shadow: none !important;
