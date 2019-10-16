@@ -2,15 +2,19 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta charset="utf-8">
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title><?php site_page_title(); ?></title>
     <meta http-equiv="x-dns-prefetch-control" content="on" />
     <link rel="dns-prefetch" href="https://cdn.bootcss.com" />
     <meta name="keywords" content="<?php echo get_option('king_gjc'); ?>" />
     <meta name="description" content="<?php echo get_option('king_ms'); ?>">
     <link rel="Shortcut Icon" href="<?php echo get_option('king_ico') ?>" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 为移动设备添加 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
     <script src="https://static.ouorz.com/popper.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/instantclick-1.2.2.js" type="module"></script>
     <?php if (isset($_COOKIE['tony_view'])) { ?>
