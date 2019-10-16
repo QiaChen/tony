@@ -35,6 +35,8 @@
     <?php echo stripslashes(get_option('king_zztj')); ?>
     <script src="https://cdn.bootcss.com/highlight.js/9.15.6/highlight.min.js"></script>
     <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/a11y-dark.min.css" rel="stylesheet">
+    <link href="/wp-includes/css/dist/block-library/style.min.css?ver=<?php get_bloginfo( 'version' )?>" rel="stylesheet">
+    
 </head>
 
 <body id="body">

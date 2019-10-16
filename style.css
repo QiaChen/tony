@@ -1024,7 +1024,6 @@ img {
 .article-content ul,
 .article-content ol,
 .article-content p {
-    display: block;
     margin-bottom: 1.1em;
     overflow: hidden;
     overflow-x: auto;
