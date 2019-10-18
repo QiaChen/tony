@@ -21,7 +21,7 @@ else $p = get_option('king_per_page');
         <p class="lead" style="margin-top: 0px;margin-left:5px"><?php get_tony_ms(); ?></p>
     </nav>
     <div class="index-cates">
-        <li v-bind:class="[ '<?php echo $id?>' == de.id? on : '', cat-item,cat-item-4,cat-real]"  style="display:none" v-for="de in des" v-if="de.count !== 0"> <a :href="de.link" :title="de.description" v-html="de.name"></a>
+        <li v-bind:class="[ '<?php echo $id?>' == de.id? 'on' : '', 'cat-item','cat-item-4','cat-real']"  style="display:none" v-for="de in des" v-if="de.count !== 0"> <a :href="de.link" :title="de.description" v-html="de.name"></a>
         </li>
         <li class="cat-item cat-item-4 loading-line" style="display: inline-block;width: 98%;height: 35px;box-shadow: none;border-radius: 0px;background: rgb(236, 237, 239);" v-if="loading_des"></li>
     </div>
