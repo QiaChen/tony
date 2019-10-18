@@ -2381,11 +2381,12 @@ table {
     position: fixed;
     top: 20px;
     z-index: 1000000;
-    background: white;
+    background: #007bff;
+    color:#fff;
     border-radius: 0 20px 20px 0px;
-    border: 1px solid #ebeaea;
     padding: 0px 20px;
     line-height: 40px;
+    box-shadow: rgba(26,26,26,.1) 0 1px 3px!important;
     text-align: center;
     height: 40px;
 }
