@@ -2376,7 +2376,7 @@ table {
     margin-top: 5px;
 }
 
-.lastPage{
+.lastPage,.lastPage:active{
     display: none;
     position: fixed;
     top: 20px;
