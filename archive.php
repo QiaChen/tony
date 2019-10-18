@@ -21,7 +21,7 @@ else $p = get_option('king_per_page');
         <p class="lead" style="margin-top: 0px;margin-left:5px"><?php get_tony_ms(); ?></p>
     </nav>
     <div class="index-cates">
-        <li v-bind:class="[ '<?php echo $id?>' == de.id? 'on' : '', 'cat-item','cat-item-4','cat-real']"   v-for="de in des" v-if="de.count !== 0"> <a :href="de.link" :title="de.description" v-html="de.name"></a>
+        <li v-bind:class="[ '<?php echo $id?>' == de.id? 'on' : '', 'cat-item','cat-item-4','cat-real']"  style="display:none" v-for="de in des" v-if="de.count !== 0"> <a :href="de.link" :title="de.description" v-html="de.name"></a>
         </li>
         <li class="cat-item cat-item-4 loading-line" style="display: inline-block;width: 98%;height: 35px;box-shadow: none;border-radius: 0px;background: rgb(236, 237, 239);" v-if="loading_des"></li>
     </div>
@@ -143,7 +143,7 @@ else $p = get_option('king_per_page');
         /* 展现内容(避免爆代码) */
         $('.article-list').css('opacity', '1');
         
-        $('.cat-real').attr('style', 'display:inline-block');
+        
         /* 展现内容(避免爆代码) */
 
         new Vue({ //axios获取顶部信息
@@ -166,6 +166,7 @@ else $p = get_option('king_per_page');
                 axios.get('<?php echo site_url() ?>/wp-json/wp/v2/categories<?php if (get_option('king_index_cate_exclude')) echo '?exclude=' . get_option('king_index_cate_exclude'); ?>')
                     .then(response => {
                         this.des = response.data;
+                        $('.cat-real').attr('style', 'display:inline-block');
                     }).then(() => {
                         this.loading_des = false;
                     });
