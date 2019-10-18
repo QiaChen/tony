@@ -2393,6 +2393,10 @@ table {
 .lastPage_left{
     left: -1px;
 }
+.index-cates li.on{
+    background: #007bff;
+    color: #fff;
+}
 
 @media screen and (max-width:767px) {
     .lastPage{

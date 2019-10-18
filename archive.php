@@ -13,24 +13,27 @@ if (!get_option('king_per_page')) $p = '6';
 else $p = get_option('king_per_page');
 ?>
 
-<div id="header_info">
+
+
+<div id="header_info" class="index-top">
     <nav class="header-nav reveal">
-        
-        <a class="top1 header-logo" style="text-decoration:none;" href="<?php echo site_url() ?>"></a>
-        <p class="top2 lead archive-p"></p>
-        
-        <div class="btn-group" style="float: right;margin-top: -80px;">
-            <button type="button" class="btn btn-primary"><a href="<?php echo site_url() ?>" style="text-decoration:none;color:white"><i class="czs-hand-slide" style="margin-right:5px" ></i>回到首页</a></button>
-        </div>
+        <a style="text-decoration:none;" href="<?php echo site_url() ?>" class="header-logo" title="<?php echo get_bloginfo('name'); ?>"><?php echo get_bloginfo('name'); ?></a>
+        <p class="lead" style="margin-top: 0px;margin-left:5px"><?php get_tony_ms(); ?></p>
     </nav>
     <div class="index-cates">
-        <li class="cat-item cat-item-4 cat-real" style="display:none" v-for="de in des" v-if="de.count !== 0"> <a :href="de.link" :title="de.description" v-html="de.name"></a>
+        <li v-bind:class="[ '<?php echo $id?>' == de.id? on : '', cat-item,cat-item-4,cat-real]"  style="display:none" v-for="de in des" v-if="de.count !== 0"> <a :href="de.link" :title="de.description" v-html="de.name"></a>
         </li>
         <li class="cat-item cat-item-4 loading-line" style="display: inline-block;width: 98%;height: 35px;box-shadow: none;border-radius: 0px;background: rgb(236, 237, 239);" v-if="loading_des"></li>
     </div>
+    <div>
+        <ul class="post_tags">
+            <li class="cat-real" v-for="tag in tages" style="display:none">
+                <a :href="tag.link" v-html="'#'+tag.name"></a>
+            </li>
+            <li class="loading-line" style="background: rgb(236, 237, 238);height: 25px;width: 100%;" v-if="loading_tages"></li>
+        </ul>
+    </div>
 </div>
-
-
 
 
 
@@ -139,8 +142,7 @@ else $p = get_option('king_per_page');
 
         /* 展现内容(避免爆代码) */
         $('.article-list').css('opacity', '1');
-        $('.top1').html('<?php echo $name; ?>');
-        $('.top2').html('<?php echo $des; ?>');
+        
         $('.cat-real').attr('style', 'display:inline-block');
         /* 展现内容(避免爆代码) */
 
@@ -153,7 +155,9 @@ else $p = get_option('king_per_page');
                     des: null,
                     loading: true, //v-if判断显示占位符
                     loading_des: true,
+                    loading_tages: true,
                     errored: true,
+                    tages: null,
                     loading_css: 'loading-line'
                 }
             },
@@ -165,7 +169,13 @@ else $p = get_option('king_per_page');
                     }).then(() => {
                         this.loading_des = false;
                     });
-
+                //获取标签
+                axios.get('<?php echo site_url() ?>/wp-json/wp/v2/tags?order=desc&per_page=15')
+                            .then(response => {
+                                this.tages = response.data;
+                            }).then(() => {
+                                this.loading_tages = false;
+                    });
                 //获取文章列表
                 axios.get('<?php echo site_url() ?>/wp-json/wp/v2/posts?per_page=<?php echo $p; ?>&page=' + paged + '&categories=' + incate)
                     .then(response => {
