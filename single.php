@@ -55,10 +55,12 @@ if (!get_option('king_read')) {
 <div class="reading-bar" style="background:<?php echo $color; ?>"></div>
 <article class="article reveal" id="lightgallery">
     <div id="load">
+        <a href="javascript:window.location.href=document.referrer;" class="lastPage lastPage_left">返回上一页</a>
+        <a :href="cate_url" class="lastPage lastPage_right" v-html="cate">分类目录</a>
         <header class="article-header">
-            <span class="badge badge-pill badge-danger single-badge"><a href="<?php echo site_url() ?>" style="text-decoration:none"><i class="czs-read-l" style="margin-right:5px;"></i>站点文章</a></span>
-            <span class="badge badge-pill badge-danger single-badge" style="margin-left: 10px;"><a :href="cate_url" style="text-decoration: none;color: #888;letter-spacing: .5px;" v-html="cate">分类目录</a></span>
-
+            <!-- <span class="badge badge-pill badge-danger single-badge"><a href="<?php echo site_url() ?>" style="text-decoration:none"><i class="czs-read-l" style="margin-right:5px;"></i>站点文章</a></span>
+            <span class="badge badge-pill badge-danger single-badge" style="float:right"><a :href="cate_url" style="text-decoration: none;color: #888;letter-spacing: .5px;" v-html="cate">分类目录</a></span> -->
+            <div class="uk-clearfix"></div>
             <h2 class="single-h2" style="height: 50px;width: 100%;background: rgba(238, 238, 238, 0.81);color:rgba(238, 238, 238, 0.81)">
             </h2>
             <div class="article-list-footer" style="height: 25px;background: rgb(246, 247, 248);width: 80%;margin-top: 15px;color:rgb(246, 247, 248)">

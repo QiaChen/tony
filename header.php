@@ -76,14 +76,14 @@
         </header>
 
     <?php } else { ?>
-        <header class="tony-header-fixed" id="header-div">
+       <!-- <header class="tony-header-fixed" id="header-div">
             <div class="header-div1-1">
                 <a href="<?php echo site_url() ?>" class="mob-header-text"><?php echo get_bloginfo('name'); ?></a>
             </div>
             <div class="header-div2" style="padding-top: 12px;">
                 <a style="font-size: 1.6rem;color:#333;text-decoration:none" href="<?php echo get_option('king_abt_url'); ?>"><i class="czs-label-info-l"></i></a>
             </div>
-        </header>
+        </header> -->
     <?php } ?>
 
     <div id="view-div" class="center-info" style="display:none">

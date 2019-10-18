@@ -1612,7 +1612,7 @@ article-content img {
 
     .article {
         margin: 0px !important;
-        padding: 40px 20px;
+        padding: 5px 20px;
     }
 }
 
@@ -2376,4 +2376,33 @@ table {
     margin-top: 5px;
 }
 
-/* End of The Tony Version */
+.lastPage{
+    display: none;
+    position: fixed;
+    top: 20px;
+    z-index: 1000000;
+    background: white;
+    border-radius: 0 20px 20px 0px;
+    border: 1px solid #ebeaea;
+    padding: 0px 20px;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+}
+.lastPage_left{
+    left: -1px;
+}
+
+@media screen and (max-width:767px) {
+    .lastPage{
+        display: block;
+    }
+    .article-header{
+        padding-top: 80px;
+    }
+}
+.lastPage_right{
+    right: 0px;
+    display: none;
+    border-radius: 20px 0 0 20px;
+}
