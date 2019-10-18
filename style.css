@@ -2395,9 +2395,11 @@ table {
 }
 .index-cates li.on{
     background: #007bff;
+    
+}
+.index-cates li.on a{
     color: #fff;
 }
-
 @media screen and (max-width:767px) {
     .lastPage{
         display: block;
