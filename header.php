@@ -65,11 +65,7 @@
                         <span class="sr-only"></span>
                     </button>
                     <div class="dropdown-menu" style="letter-spacing:0px !important">
-                        <?php if (!isset($_COOKIE['tony_view'])) { ?>
-                            <a class="dropdown-item" onclick="setCookie('tony_view','1')">夜间主题</a>
-                        <?php } else { ?>
-                            <a class="dropdown-item" onclick="delCookie('tony_view')">日间主题</a>
-                        <?php } ?>
+                            <a class="dropdown-item" href="https://github.com/QiaChen"> github </a>
                     </div>
                 </div>
             </div>
