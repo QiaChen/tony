@@ -13,6 +13,8 @@ else $m = 1;
         <p class="lead" style="margin-top: 0px;margin-left:5px"><?php get_tony_ms(); ?></p>
     </nav>
     <div class="index-cates">
+        <li datacates="cate" v-bind:class="on cat-item cat-item-4 cat-real"  style="display:none" >  <a href="/" >主页</a>
+        </li>
         <li class="cat-item cat-item-4 cat-real" style="display:none" v-for="cate in cates" v-if="cate.count !== 0"> <a :href="cate.link" :title="cate.description" v-html="cate.name"></a>
         </li>
         <li class="cat-item cat-item-4 loading-line" style="display: inline-block;width: 98%;height: 35px;box-shadow: none;border-radius: 0px;background: rgb(236, 237, 239);" v-if="loading_cates"></li>
