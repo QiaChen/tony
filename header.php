@@ -131,9 +131,9 @@
                 </ul>
                 <ul v-if="loading_ph">
                     <ul>
-                        <li class="search-line" style="padding: 30px;background: #f1f2f3;border: none;"></li>
-                        <li class="search-line" style="padding: 30px;background: #f1f2f3;border: none;"></li>
-                        <li class="search-line" style="padding: 30px;background: #f1f2f3;border: none;"></li>
+                        <li class="search-line" style="display:none;padding: 30px;background: #f1f2f3;border: none;"></li>
+                        <li class="search-line" style="display:none;padding: 30px;background: #f1f2f3;border: none;"></li>
+                        <li class="search-line" style="display:none;padding: 30px;background: #f1f2f3;border: none;"></li>
                     </ul>
                 </ul>
             </div>
