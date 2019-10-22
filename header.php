@@ -83,7 +83,7 @@
         <div class="uk-button-group" style="position:fixed;right:0;">
             <div class="uk-inline">
             <button class="uk-button-menu" type="button"><span class="czs-menu-l"></span></button>
-            <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
+            <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;" style="display:none">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li><a href="/">主页</a></li>
                     <li><a href="https://c.dao.bi">网盘</a></li>
