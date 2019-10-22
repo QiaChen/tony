@@ -2416,7 +2416,7 @@ table {
     .uk-button-menu{
         display: inline-block !important;
         padding:0px !important;
-        background: #fff;
+        background: #fff !important;
         width: 30px;
         height: 30px;
         border-radius:15px;
