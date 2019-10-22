@@ -80,6 +80,20 @@
                 <a style="font-size: 1.6rem;color:#333;text-decoration:none" href="<?php echo get_option('king_abt_url'); ?>"><i class="czs-label-info-l"></i></a>
             </div>
         </header> -->
+        <div class="uk-button-group" style="position:fixed;right:0;">
+            <div class="uk-inline">
+            <button class="uk-button-menu" type="button"><span class="czs-menu-l"></span></button>
+            <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li><a href="/">主页</a></li>
+                    <li><a href="https://c.dao.bi">网盘</a></li>
+                    <li><a href="/about">关于</a></li>
+                    <!-- <li class="uk-nav-header">Header</li> -->
+                </ul>
+            </div>
+            </div>
+        </div>
+
     <?php } ?>
 
     <div id="view-div" class="center-info" style="display:none">

@@ -2403,6 +2403,9 @@ table {
 .index-cates li.on a{
     color: #fff !important;
 }
+.uk-button-menu{
+    display: none;
+}
 @media screen and (max-width:767px) {
     .lastPage{
         display: block;
@@ -2410,7 +2413,23 @@ table {
     .article-header{
         padding-top: 80px;
     }
+    .uk-button-menu{
+        display: inline-block !important;
+        padding:0px !important;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius:15px;
+        line-height: 30px;
+        border: none !important;
+        box-shadow: rgba(26, 26, 26, 0.1) 0px 1px 3px !important;
+        font-size: 20px !important;
+        margin-top: 20px;
+        margin-right:20px;
+        background: none;
+    }
 }
+
 .lastPage_right{
     right: 0px;
     display: none;
